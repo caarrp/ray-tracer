@@ -6,3 +6,5 @@ A ray tracer in my interpretation:
 reading this resource online: https://rtintro.realtimerendering.com/
 
 407 project roll into the summer, personal tray tracer all the better to experiment with wave lengths, geometric projections, stereographic projections etc. 
+
+testing VM commits
