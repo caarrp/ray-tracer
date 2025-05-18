@@ -65,6 +65,18 @@ double len(Vec *v_1){
 }
 
 
+Vec *make_unit(Vec *v){
+	//returns unit vector of current vector
+    double magn = len(v);
+    double unit_x = v->x / magn;
+    double unit_y = v->y / magn;
+    double unit_z = v->z / magn;
+    Vec *v = malloc_v(unit_x, unit_y, unit_z);
+
+    return v;
+}
+
+
 void free_v(Vec *v){
        //frees alocated memory
     free(v);
