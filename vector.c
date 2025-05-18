@@ -13,6 +13,46 @@ Vec* malloc_v(double x, double y, double z){
 	return v;
 	}
 
+Vec* add(Vec *v_1, Vec *v_2){
+	//adds vector 1 to vector 2
+    double add_x = v_1->x + v_2->x;
+    double add_y = v_1->y + v_2->y;
+    double add_z = v_1->z + v_2->z;
+    Vec *v = malloc_v(add_x, add_y, add_z);
+
+    return v;
+}
+
+
+Vec* sub(Vec *v_1, Vec *v_2){
+	//subtracts vector 1 from vector 2
+    double sub_x = v_1->x - v_2->x;
+    double sub_y = v_1->y - v_2->y;
+    double sub_z = v_1->z - v_2->z;
+    Vec *v = malloc_v(sub_x, sub_y, sub_z);
+
+    return v;
+}
+
+
+Vec* mult(Vec *v_1, Vec *v_2){
+	//multiplies vector 1 to vector 2
+    double mult_x = v_1->x * v_2->x;
+    double mult_y = v_1->y * v_2->y;
+    double mult_z = v_1->z * v_2->z;
+    Vec *v = malloc_v(mult_x, mult_y, mult_z);
+    
+    return v;
+}
+Vec* div(Vec *v_1, Vec *v_2){
+	// divides vector 1 from vector 2
+    double div_x = v_1->x / v_2->x;
+    double div_y = v_1->y / v_2->y;
+    double div_z = v_1->z / v_2->z;
+    Vec *v = malloc_v(div_x, div_y, div_z);
+    
+    return v;
+}
 
 double len(Vec *v_1){
 	//returns magnitude of 3d vector
@@ -26,11 +66,12 @@ double len(Vec *v_1){
 
 
 void free_v(Vec *v){
-    //frees alocated memory
-	free(v);
+       //frees alocated memory
+    free(v);
 }
 
 
 void print_v(Vec *v){
+	//prints x,y,z coordinates of vector
     printf("<%.3f, %.3f, %.3f>", v->x, v->y, v->z);
 }
