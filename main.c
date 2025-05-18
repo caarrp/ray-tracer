@@ -6,7 +6,10 @@
 int main(){
     //testing vector functionality
 
-    Vec *a = malloc_v(double 5,double 3, double 7);
+    //initializing values
+    double x_1 = 0.5; double y_1 = 1.0; double z_1 = 0.3;
+
+    Vec *a = malloc_v( x_1, y_1, z_1);
     print_v(a);
 
 
