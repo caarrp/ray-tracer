@@ -5,10 +5,12 @@
 
 
 typedef struct Vector{
-    double *x;
-    double *y; 
-    double *z;
+    double x;
+    double y; 
+    double z;
 }Vec;
+
+Vec* malloc_v(double x, double y, double z);
 
 void add(Vec *v_1, Vec *v_2);
 
@@ -16,8 +18,9 @@ void dot(Vec *v_1, Vec *v_2);
 
 void cross(Vec *v_1, Vec *v_2);
 
-double len(Vec *v_1);
+double len(Vec *v);
 
-Vec* malloc_v();
+void print_v(Vec *v);
+
 
 #endif
