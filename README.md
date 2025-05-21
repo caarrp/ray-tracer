@@ -37,8 +37,8 @@ How a ray tracer works:
 imagine a ray as a part of a line. It has some orgin A, and a direction
 B, and is oreinted in 3D space. the function of this rays position p, is
 parameterized by some faraible t, which w can think of as time, then 
-a function for a ray is given by: 
-        p(t) = A + Bt
+a function for a ray is given by 
+    p(t) = A + Bt
 for all positive values of t ( an arbitrary decision to keep the orgin A
 as the forefront as our image) this function defines the many rays that 
 will be used to define the viewing feild.
